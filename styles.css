@@ -6,6 +6,17 @@ body {
   letter-spacing: 0.01em;
 }
 
+.vf-chat-widget-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -65,4 +76,31 @@ main {
   color: #888;
   font-weight: 400;
   letter-spacing: 0.01em;
+}
+
+/* Centered Voiceflow Chat Widget */
+#vf-chat-widget {
+  width: 100%;
+  max-width: 100%;
+  min-width: 280px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  padding: 0;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  #vf-chat-widget {
+    width: 98vw;
+    min-width: unset;
+    border-radius: 12px;
+  }
+  .vf-chat-widget-wrapper {
+    max-width: 98vw;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
 } 
