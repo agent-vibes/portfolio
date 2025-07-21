@@ -116,6 +116,43 @@ main {
   display: block;
 }
 
+.contact-block {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 0 0 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.contact-item {
+  font-size: 1.08rem;
+  margin: 0;
+  /* Remove flex and gap for inline appearance */
+}
+.contact-label {
+  font-weight: 600;
+  color: #111;
+  min-width: unset;
+  display: inline;
+}
+.contact-link {
+  display: inline;
+  color: #111;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.contact-link:hover {
+  color: #007aff;
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   #vf-chat-widget {
     width: 98vw;
